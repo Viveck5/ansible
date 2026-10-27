@@ -4,5 +4,5 @@
   tasks:
     - name: "Print hello world"
       ansible.builtin.debug:
-      mgs: "Hello ansible..!"
+        mgs: "Hello ansible..!"
 
