@@ -11,7 +11,7 @@
       msg: "Hello from PLAY-2 TASK-2"
 
 - name: PLAY-2
-  host: local
+  hosts: local
   connection: local
   tasks:
   - name: PLAY-2 and TASK-1
