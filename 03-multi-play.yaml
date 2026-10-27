@@ -6,9 +6,9 @@
     debug:
       msg: "Hello from PLAY-1 TASK-2"
   
-  -name:
-   debug:
-    msg: "Hello from PLAY-2 TASK-2"
+  - name:
+    debug:
+      msg: "Hello from PLAY-2 TASK-2"
 
 - name: PLAY-2
   host: local
