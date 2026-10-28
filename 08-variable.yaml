@@ -13,6 +13,6 @@
     tasks:
       - name: print the confidential information
         debug:
-          msg: "username is {{username}}, password is {{password}}
+          msg: "username is {{username}}, password is {{password}}"
 
 
