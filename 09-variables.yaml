@@ -1,6 +1,5 @@
 - name: varaibles from inventory file
-  hosts: local
-  connection: local
+  hosts: frontend
   tasks:
   - name: print the varaibles
     debug:
