@@ -8,7 +8,7 @@
       - { name: 'nginx', state: 'absent' }
       - { name: 'mysql', state: 'present' }
       - { name: 'git', state: 'absent' }
-      - { name: 'n-tools', state: 'present' }
+      - { name: 'net-tools', state: 'present' }
       - { name: 'htop', state: 'absent' }
 
   tasks:
