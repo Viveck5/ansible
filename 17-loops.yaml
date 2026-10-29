@@ -1,6 +1,7 @@
 - name: install packages
   hosts: local
   connection: local
+  become: yes
   vars:
     packages:
     - nginx
@@ -10,7 +11,7 @@
     - htop
   tasks:
   - name: install packages
-  package:
-    name: "{{ item }}"
-    state: present
-  loop: "{{ packages }}"
+    package:
+      name: "{{ item }}"
+      state: present
+    loop: "{{ packages }}"
