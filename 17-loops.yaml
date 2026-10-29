@@ -3,11 +3,11 @@
   connection: local
   vars:
     packages:
-      - nginx
-      - mysql
-      - git
-      - net-tools
-      - htop
+    - nginx
+    - mysql
+    - git
+    - net-tools
+    - htop
   tasks:
   - name: install packages
   package:
