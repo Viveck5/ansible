@@ -1,0 +1,35 @@
+- name: demo on filters
+  hosts: local
+  connection: local
+
+  vars:
+
+    topics: Linux, shell, ansible, Terraform, docker
+    names:
+    - Sai
+    - Viveck
+    - Pothuganti
+    topic: ANSIBLE
+    duration: "4"
+
+  tasks:
+
+  - name: print the name
+    debug:
+      msg: "{{ person_name | default('Ramesh') }}"
+
+  - name: convert string to list
+    debug:
+      msg: "Topics are: {{ topics | split(',') | trim }} "
+
+  - name: convert list to string
+    debug:
+      msg: "Full name {{ names | join(' ') }}"
+
+  - name: convert to lowercase
+    debug:
+      msg: "Topic: {{ topic | lower }}"
+
+  - name: convert string to install
+    debug:
+      msg: "Duration: {{ duration | int }}"  
